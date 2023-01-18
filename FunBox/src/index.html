@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, ">
+        <link rel="stylesheet" href="./css/styles.min.css">
+        <title>Prototype</title>
+    </head>
+    <body>
+        <section class="main">
+            <div class="main__wrap">
+                <h1 class="main__title">Ты сегодня покормил кота?</h1>
+                <div class="cards">
+                    @@include('./components/card/card.html', {
+                        "value": "фуа-гра",
+                        "active": "",
+                        "descr-default": "Сказочное заморское яство",
+                        "descr-hover": "Котэ не одобряет?",
+                        "taste": "с фуа-гра",
+                        "amount": "10 порций",
+                        "present": "мышь в подарок",
+                        "weight": "0,5",
+                        "caption-default": "Чего сидишь? Порадуй котэ,",
+                        "caption-selected": "Печень утки разварная с артишоками.",
+                        "caption-disabled": "Печалька, с фуа-гра закончился."
+                    })
+                    @@include('./components/card/card.html', {
+                        "value": "рыба",
+                        "active": "",
+                        "descr-default": "Сказочное заморское яство",
+                        "descr-hover": "Котэ не одобряет?",
+                        "taste": "с рыбой",
+                        "amount": "40 порций",
+                        "present": "2 мыши в подарок",
+                        "weight": "2",
+                        "caption-default": "Чего сидишь? Порадуй котэ,",
+                        "caption-selected": "Головы щучьи с чесноком, да свежайшая сёмгушка.",
+                        "caption-disabled": "Печалька, с рыбой закончился."
+                    })
+                    @@include('./components/card/card.html', {
+                        "value": "кура",
+                        "active": "disabled",
+                        "descr-default": "Сказочное заморское яство",
+                        "descr-hover": "Котэ не одобряет?",
+                        "taste": "с курой",
+                        "amount": "100 порций",
+                        "present": "5 мышей в подарок<br>заказчик доволен",
+                        "weight": "5",
+                        "caption-default": "Чего сидишь? Порадуй котэ,",
+                        "caption-selected": "Филе из цыплят с трюфелями в бульоне.",
+                        "caption-disabled": "Печалька, с курой закончился."
+                    })
+                </div>
+            </div>
+        </section>
+
+        <script src="./js/main.min.js"></script>
+
+    </body>
+</html>
